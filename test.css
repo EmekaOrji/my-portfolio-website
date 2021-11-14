@@ -10,7 +10,7 @@ html, body {
 body {
   background: darkblue;
 }
-.container {
+/* .container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,7 +31,6 @@ body {
   height: 10%;
   border-radius: 5em;
   background: #000;
-  /* transform-origin: right; */
   transition: 100ms all ease-in-out;
 }
 .bar1 {
@@ -52,4 +51,4 @@ body {
 }
 .hamburger:focus .bar3 {
   transform: rotate(45deg);
-}
+} */
