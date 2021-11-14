@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin:  0;
+}
+
+body {
+  background: darkblue;
+  background: #fff;
+  background: linear-gradient(0deg, #000054, #fff);
+  /* height: 100vh; */
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  height: 10%;
+  border: 2px solid red;
+  position: sticky;
+}
+
+.logo img {
+  width: 10em;
+  padding: 1em;
+}
+
