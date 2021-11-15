@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin:  0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: fit-content;
+  border: 2px solid black;
+  background: chartreuse;
+}
+.content {
+  display: flexbox;
+  width: 100%;
+  border: 1px solid #000;
+}
+.content1 {
+  background: chocolate;
+  padding: 1em;
+}
+.content2 {
+  background: darkcyan;
+  display: flex;
+}

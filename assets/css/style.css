@@ -8,7 +8,8 @@ html, body {
   margin:  0;
 }
 body {
-  background: rgb(4, 4, 111);
+  background: #04046f;
+  background: #00bbff;
 }
 body a {
   text-decoration: none;
@@ -25,14 +26,12 @@ body a {
 .header { 
   margin-top: 1%;
   display: flex;
-  align-items: center;
   height: 5%;
-  border: 1px solid #000;
 }
 
 /*==============================*/
 .logo {
-  padding: 0 .9em;
+  width: 14em;
 }
 /*==============================*/
 
@@ -46,27 +45,39 @@ body a {
   width: 100%;
   display: none;
   justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
 }
 /*==============================*/
 
-.navbar_links {
+.navbar_links_container {
   display: flex;
-  align-items: center;
-  background: red;
   width: 100%;
   height: auto;
 }
 .navbar_items {
-  padding: 0 .5em;
+  display: flex;
+  width: 100%;
+  transition: 150ms all ease-in-out;
+  border-radius: .4em;
+}
+.navbar_items:hover {
+  background: #fefb;
+}
+.navbar_items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .social_handles {
   display: none;
-  min-width: max-content;
+  justify-content: space-between;
+  align-self: center;
+  width: 8em;
+  margin-left: 2%;
 }
 .social_handles a {
-  margin: .1em;
+  display: flexbox;
 }
 
 /*==============================*/
@@ -74,7 +85,8 @@ body a {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 4%;
+  align-items: center;
+  /* padding-right: 4%; */
 }
 /*==============================*/
 
@@ -89,13 +101,11 @@ body a {
     display: none;
   }
 }
-@media screen and (min-width: 680px) {
-  .social_handles {
-    display: initial;
-  }
-}
-@media screen and (min-width: 750px) {
-  .navbar_links {
+@media screen and (min-width: 700px) {
+  .navbar_links_container {
     width: 20em;
+  }
+  .social_handles {
+    display: flex;
   }
 }
