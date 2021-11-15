@@ -3,38 +3,99 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
   height: 100%;
   margin:  0;
 }
-
 body {
-  background: darkblue;
-  background: #fff;
-  background: linear-gradient(0deg, #000054, #fff);
-  /* height: 100vh; */
+  background: rgb(4, 4, 111);
 }
-
+body a {
+  text-decoration: none;
+  color: unset;
+}
 #app {
   display: flex;
   flex-direction: column;
 }
-
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
-
-header {
+.header { 
+  margin-top: 1%;
   display: flex;
-  height: 10%;
-  border: 2px solid red;
-  position: sticky;
+  align-items: center;
+  height: 5%;
+  border: 1px solid #000;
 }
+
+/*==============================*/
+.logo {
+  padding: 0 .9em;
+}
+/*==============================*/
 
 .logo img {
-  width: 10em;
-  padding: 1em;
+  width: 8em;
+  height: auto;
 }
 
+/*==============================*/
+.navbar {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+/*==============================*/
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+  background: red;
+  width: 100%;
+  height: auto;
+}
+.navbar_items {
+  padding: 0 .5em;
+  width: 100%;
+}
+.social_handles {
+  display: none;
+  min-width: max-content;
+}
+.social_handles a {
+  margin: .1em;
+}
+
+/*==============================*/
+.hamburger_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4%;
+}
+/*==============================*/
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 80%;
+  }
+  .navbar {
+    display: flex;
+  }
+  .hamburger_container {
+    display: none;
+  }
+}
+@media screen and (min-width: 680px) {
+  .social_handles {
+    display: initial;
+  }
+}
+@media screen and (min-width: 750px) {
+  .navbar_links {
+    width: 20em;
+  }
+}
