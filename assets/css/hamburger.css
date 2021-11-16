@@ -1,36 +1,39 @@
 .hamburger {
-  width: 3em;
-  height: 2.4em;
+  width: 1.8em;
+  height: 1.4em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 50%;
 }
 .bar {
-  width: 100%;
-  height: 10%;
-  border-radius: 5em;
+  width: 1.75em;
+  height: .2em;
+  border-radius: 50%;
   background: #000;
   transition: 300ms all linear;
 }
 .bar1 {
   transform-origin: 100% 100%;
   transition: 300ms all cubic-bezier(0.34, 1, 0, 2.32);
-  height: 10.5%;
+  z-index: 5;
 }
 .bar2 {
-  height: 10.5%;
+  transition: all 300ms linear;
 }
 .bar3 {
   transform-origin: 100% 0%;
   transition: 300ms all cubic-bezier(0.34, 1, 0, 2.32);
+  z-index: 5;
 }
-.hamburger:focus .bar1 {
-  transform: rotate(-44deg);
+.navbar_active .bar1 {
+  transform: rotate(-42deg);
 }
-.hamburger:focus .bar2 {
-  transform: translate(-2000px);
+.navbar_active .bar2 {
+  transform: translate(-29vh, 10300%) rotate(90deg) scale(30, 200);
+  border-radius: 0;
+  background: #eeea;
 }
-.hamburger:focus .bar3 {
-  transform: rotate(44deg);
+.navbar_active .bar3 {
+  transform: rotate(42deg);
 }
