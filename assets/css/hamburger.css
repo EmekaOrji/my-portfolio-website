@@ -30,9 +30,10 @@
   transform: rotate(-42deg);
 }
 .navbar_active .bar2 {
-  transform: translate(-29vh, 10300%) rotate(90deg) scale(30, 200);
+  transform: translate(-29vh, 10300%) rotate(90deg) scale(65, 270);
   border-radius: 0;
   background: #eeea;
+  backdrop-filter: blur(50px);
 }
 .navbar_active .bar3 {
   transform: rotate(42deg);

@@ -12,6 +12,7 @@ body {
   background: #00bbff;
   scroll-behavior: smooth;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -88,6 +89,25 @@ body a {
 
 
 
+@media screen and (max-width: 500px) {
+  .navbar_active {
+    display: flex;
+  }
+  .navbar_active .navbar_links_container {
+    position: absolute;
+    left: 0;
+    top: 30vh;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .navbar_active .navbar_items {
+    border-radius: 0;
+    height: 5em;
+  }
+  .navbar_active .social_handles {
+    display: none;
+  }
+}
 @media screen and (min-width: 500px) {
   .container {
     width: 80%;
