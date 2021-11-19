@@ -93,8 +93,34 @@ a.title {
 .navbar {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 5%;
   height: 100%;
-  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_container {
+  height: 61%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.navbar_item {
+  /* padding: 1em; */
+  width: 4em;
+  background: #333;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_item_text {
+  position: relative;
+}
+.nav_tip {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
 }
 /* ========== NAVBAR SECTION ENDS ========== */
