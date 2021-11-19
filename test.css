@@ -1,0 +1,58 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 500ms ease-in-out;
+}
+html, body {
+  height: 100vh;
+  margin:  0;
+}
+body {
+  background: darkslateblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 20%;
+  aspect-ratio: 1 / 1;
+}
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+}
+.container:hover .content {
+  transform: rotateY(180deg);
+}
+.content1, .content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.content1 {
+  background: darkblue;
+  transform: rotateY(180deg);
+}
+.content2 {
+  background: #eef;
+  transform: translateZ(.1px);
+}
+
+/* Thanks to Kevin Powell, I was able to understand indepth how 'preserve-3d' transform-style works */
+/* Checkout the video here "https://www.youtube.com/watch?v=FeJEEE3zc4U" */
