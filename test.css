@@ -29,7 +29,7 @@ body {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 2s;
+  transition: transform 1s cubic-bezier(.69,-0.36,.29,1.38);
 }
 .container:hover .content {
   transform: rotateY(180deg);
@@ -44,6 +44,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  padding: 1em;
+  border-radius: 50%;
 }
 .content1 {
   background: darkblue;
@@ -52,6 +56,9 @@ body {
 .content2 {
   background: #eef;
   transform: translateZ(.1px);
+}
+p {
+  transform: translateZ(65px);
 }
 
 /* Thanks to Kevin Powell, I was able to understand indepth how 'preserve-3d' transform-style works */

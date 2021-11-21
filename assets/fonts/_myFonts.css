@@ -1,25 +1,84 @@
-/* alpha_echoregular */
+/* 
+
+======= FONT FAMILY NAMES ======= 
+
+  > font-family: Days Later;
+  > font-family: Alpha echo;
+  > font-family: Cookie;
+  > font-family: Faster;
+  > font-family: Fredoka;
+  > font-family: Give You Glory;
+  > font-family: Gloria Hallelujah;
+  > font-family: Lobster;
+  > font-family: Luckiest Guy;
+  > font-family: Monoton;
+  > font-family: Nosifer;
+  > font-family: Patua;
+  > font-family: Righteous;
+  > font-family: Rubik Beastly;
+  > font-family: Spartan;
+  > font-family: Spring time romance;
+  > font-family: Titan;
+
+##  Download the 'my-curated-fonts' folder into 
+    your root folder,
+##  Simply link to 'this' file in your html, and
+##  Copy any of the lines of css code above into 
+    the an element's style of your wish
+
+
+    E N  J  O  Y  !  !  !
+*/
+
+
+/* 28 Days Later */
+@font-face {
+  font-family: 'Days Later';
+  src: url('28-days-later.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: '28 Days Later';
+  src: url('28-days-later.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: '28 Days Later';
+  src: url('28-days-later.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: '28 Days Later';
+  src: url('28-days-later.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Alpha echo */
 @font-face {
   font-family: 'Alpha echo';
-  src: url('alpha_echo.woff') format('woff');
+  src: url('alpha-echo.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Alpha echo';
-  src: url('alpha_echo.woff') format('woff');
+  src: url('alpha-echo.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Alpha echo';
-  src: url('alpha_echo.woff') format('woff');
+  src: url('alpha-echo.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Alpha echo';
-  src: url('alpha_echo.woff') format('woff');
+  src: url('alpha-echo.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
@@ -50,28 +109,288 @@
   font-style: italic;
 }
 
+/* Faster */
+@font-face {
+  font-family: 'Faster';
+  src: url('faster.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Faster';
+  src: url('faster.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Faster';
+  src: url('faster.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Faster';
+  src: url('faster.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Fredoka */
 @font-face {
   font-family: 'Fredoka';
-  src: url('fredoka-one.ttf') format('woff');
+  src: url('fredoka.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fredoka';
-  src: url('fredoka-one.ttf') format('woff');
+  src: url('fredoka.ttf') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Fredoka';
-  src: url('fredoka-one.ttf') format('woff');
+  src: url('fredoka.ttf') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fredoka';
-  src: url('fredoka-one.ttf') format('woff');
+  src: url('fredoka.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Give You Glory */
+@font-face {
+  font-family: 'Give You Glory';
+  src: url('give-you-glory.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Give You Glory';
+  src: url('give-you-glory.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Give You Glory';
+  src: url('give-you-glory.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Give You Glory';
+  src: url('give-you-glory.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Gloria Hallelujah */
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url('gloria-hallelujah.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url('gloria-hallelujah.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url('gloria-hallelujah.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url('gloria-hallelujah.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Lobster */
+@font-face {
+  font-family: 'Lobster';
+  src: url('lobster/lobster-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url('lobster/lobster-Italic.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url('lobster/lobster-Bold.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url('lobster/lobster-BoldItalic.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Luckiest Guy */
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('luckiest-guy.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('luckiest-guy.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('luckiest-guy.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('luckiest-guy.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Monoton */
+@font-face {
+  font-family: 'Monoton';
+  src: url('monoton.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Monoton';
+  src: url('monoton.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Monoton';
+  src: url('monoton.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Monoton';
+  src: url('monoton.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Nosifer */
+@font-face {
+  font-family: 'Nosifer';
+  src: url('nosifer.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nosifer';
+  src: url('nosifer.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Nosifer';
+  src: url('nosifer.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nosifer';
+  src: url('nosifer.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Patua */
+@font-face {
+  font-family: 'Patua';
+  src: url('patua.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Patua';
+  src: url('patua.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Patua';
+  src: url('patua.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Patua';
+  src: url('patua.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Righteous */
+@font-face {
+  font-family: 'Righteous';
+  src: url('righteous.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Righteous';
+  src: url('righteous.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Righteous';
+  src: url('righteous.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Righteous';
+  src: url('righteous.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Rubik Beastly */
+@font-face {
+  font-family: 'Rubik Beastly';
+  src: url('rubik-beastly.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Beastly';
+  src: url('rubik-beastly.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Rubik Beastly';
+  src: url('rubik-beastly.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Beastly';
+  src: url('rubik-beastly.ttf') format('woff');
   font-weight: bold;
   font-style: italic;
 }
@@ -102,29 +421,54 @@
   font-style: italic;
 }
 
-/* Lobster */
+/* Spring time romance */
 @font-face {
-  font-family: 'Lobster';
-  src: url('Lobster-Regular.ttf') format('woff');
+  font-family: 'Spring time romance';
+  src: url('spring-time-romance.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Lobster';
-  src: url('Lobster-Italic.ttf') format('woff');
+  font-family: 'Spring time romance';
+  src: url('spring-time-romance.ttf') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'Lobster';
-  src: url('Lobster-Bold.ttf') format('woff');
+  font-family: 'Spring time romance';
+  src: url('spring-time-romance.ttf') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Lobster';
-  src: url('Lobster-BoldItalic.ttf') format('woff');
+  font-family: 'Spring time romance';
+  src: url('spring-time-romance.ttf') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 
+/* Titan */
+@font-face {
+  font-family: 'Titan';
+  src: url('titan.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Titan';
+  src: url('titan.ttf') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Titan';
+  src: url('titan.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Titan';
+  src: url('titan.ttf') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
