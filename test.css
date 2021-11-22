@@ -41,7 +41,7 @@ body {
   color: #a7a29c;
 }
 .profile_image_container {
-  width: 70%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
