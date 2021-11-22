@@ -3,15 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 500ms ease-in-out;
+  scroll-behavior: smooth;
 }
 html, body {
   height: 100vh;
   margin:  0;
 }
 body {
-  background: darkslateblue;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 2em;
+  background: #0c1936;
 }
 #app {
   width: 100%;
@@ -20,46 +19,49 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container {
-  width: 20%;
-  aspect-ratio: 1 / 1;
+.profile {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border-radius: 2em;
+  overflow: hidden;
+  box-shadow: .1em .1em 1em .1em #06050388;
 }
-.content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 1s cubic-bezier(.69,-0.36,.29,1.38);
-}
-.container:hover .content {
-  transform: rotateY(180deg);
-}
-.content1, .content2 {
+.profile_text_container {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  padding: 1em;
-  border-radius: 50%;
+  height: 100%;
+  font-family: Alpha echo;
 }
-.content1 {
-  background: darkblue;
-  transform: rotateY(180deg);
+.profile_text_container h1 {
+  font-size: 3em;
+  width: 80%;
+  color: #a7a29c;
 }
-.content2 {
-  background: #eef;
-  transform: translateZ(.1px);
+.profile_image_container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-p {
-  transform: translateZ(65px);
+.profile_image {
+  width: 90%;
+  height: 90%;
+  border-radius: 2em;
+  background-color: #0c1936;
+  background-image: url(./media/photos/italo-melo.jpg);
+  /* background-image: url("https://picsum.photos/id/823/1920/1080"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-blend-mode: screen; */
+  box-shadow:
+   1em 1em 1em .8em inset #0c1936,
+   -1em -1em 1em .8em inset #0c1936,
+   1em -1em 1em .8em inset #0c1936,
+   -1em 1em 1em .8em inset #0c1936
+  ;
 }
-
-/* Thanks to Kevin Powell, I was able to understand indepth how 'preserve-3d' transform-style works */
-/* Checkout the video here "https://www.youtube.com/watch?v=FeJEEE3zc4U" */
