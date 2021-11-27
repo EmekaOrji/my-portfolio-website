@@ -12,13 +12,36 @@
   <div id="app">
     <section class="profile">
       <div class="profile_text_container">
-        <h1>HI! I'm Emeka Orji</h1>
-
+        <div class="profile_text">
+          <h1>HI! I'm Emeka Orji</h1>
+          <p id="type"></p>
+        </div>
       </div>
       <div class="profile_image_container">
         <div class="profile_image"></div>
       </div>
     </section>
   </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./assets/js/typer.min.js"></script>
+  <script src="./assets/js/typing.js"></script>
+  <script>
+    $("#type").typer({
+      strings: [
+        "and",
+        "...",
+        "I code"
+      ],
+      typeSpeed: 200,
+      backspaceSpeed: 20,
+      backspaceDelay: 800,
+      repeatDelay: 1000,
+      repeat: true,
+      autoStart: true,
+      startDelay: 100,
+      useCursor:true
+    });
+  </script>
 </body>
 </html>

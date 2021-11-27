@@ -1,3 +1,7 @@
+:root {
+  --main-color: darkslateblue;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -10,7 +14,7 @@ html, body {
   margin:  0;
 }
 body {
-  background: darkslateblue;
+  background: var(--main-color);
 }
 body a {
   text-decoration: none;
@@ -205,23 +209,7 @@ a.title {
   background: #000055;
   transform: rotateY(180deg);
   color: #fff;
-  font-family: 28 Days Later;
-  font-family: Alpha echo;
-  font-family: Cookie;
-  font-family: Faster;
-  font-family: Fredoka;
-  font-family: Give You Glory;
-  font-family: Gloria Hallelujah;
-  font-family: Lobster;
   font-family: Luckiest Guy;
-  font-family: Monoton;
-  font-family: Nosifer;
-  font-family: Patua;
-  font-family: Righteous;
-  font-family: Rubik Beastly;
-  font-family: Spartan;
-  font-family: Spring time romance;
-  font-family: Titan;
 }
 .nav_logo {
   white-space: nowrap;
@@ -239,6 +227,70 @@ a.title {
   }
 }
 /* ========== NAVBAR SECTION ENDS ========== */
+
+
+
+
+.profile {
+  display: flex;
+  /* width: 90%; */
+  height: 100%;
+  border-radius: 2em;
+  overflow: hidden;
+  box-shadow: .1em .1em 1em .1em #06050388;
+}
+.profile_text_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Alpha echo;
+  /* border: 1px solid red; */
+}
+.profile_text_container h1 {
+  font-size: 3em;
+  width: 80%;
+  color: #a7a29c;
+}
+.profile_text {
+  border: 2px solid red;
+}
+.profile_image_container {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in;
+  transition: width 400ms ease-in;
+}
+.profile_visible .profile_image_container {
+  opacity: 1;
+  width: 100%;
+}
+.profile_image_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, transparent 0%, var(--main-color) 100%);
+  z-index: 5;
+  /* border: 1px solid #000; */
+}
+.profile_image {
+  width: 100%;
+  height: 100%;
+  /* background-color: #0c1936; */
+  background-image: url(/media/photos/italo-melo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 

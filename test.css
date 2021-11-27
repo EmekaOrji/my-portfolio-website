@@ -53,11 +53,9 @@ body {
   border-radius: 2em;
   background-color: #0c1936;
   background-image: url(./media/photos/italo-melo.jpg);
-  /* background-image: url("https://picsum.photos/id/823/1920/1080"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-blend-mode: screen; */
   box-shadow:
    1em 1em 1em .8em inset #0c1936,
    -1em -1em 1em .8em inset #0c1936,
