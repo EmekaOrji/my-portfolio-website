@@ -8,8 +8,8 @@ setTimeout(() => {
 }, 400);
 setTimeout(() => {
   navItem.forEach(e => {
-    e.classList.add("navbar_item_hidden");
     e.classList.remove("navbar_item_visible");
+    e.classList.add("navbar_item_hidden");
   });
 }, 4400);
 navBar.addEventListener("mouseover", () => {

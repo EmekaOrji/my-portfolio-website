@@ -11,7 +11,7 @@ function introduce() {
     speed: 200
   });
   new Typify(iCode, {
-    words: ["...", "and I develop the web"],
+    words: ["...", "and I develop the web!"],
     start: 3000,
     pause: 2000,
     speed: 200,

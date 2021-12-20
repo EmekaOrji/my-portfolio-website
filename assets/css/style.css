@@ -1,7 +1,8 @@
+/* ========== ROOT STYLING STARTS ========== */
 :root {
-  --main-color: darkslateblue;
+  --main-color-1: #274170;
+  --main-color-2: darkorange;
 }
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -14,7 +15,7 @@ html, body {
   margin:  0;
 }
 body {
-  background: var(--main-color);
+  background: var(--main-color-1);
 }
 body a {
   text-decoration: none;
@@ -23,33 +24,39 @@ body a {
 #app {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 body::-webkit-scrollbar {
-  width: .4em;
+  width: .6em;
 }
 body::-webkit-scrollbar-thumb {
   background: #ff8c00aa;
   border-radius: 50em;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: darkorange;
+  background: var(--main-color-2);
 }
 body::-webkit-scrollbar-track {
   background: #aaaa;
 }
+/* ========== ROOT STYLING ENDS ========== */
 
 
 
 
-/* ========== HEADER SECTION STARTS ========== */
+/* ========== HEADER STARTS ========== */
 .header {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 13%;
+  z-index: 2;
 }
 .main_title {
   width: 12em;
   min-width: 10em;
   border-radius: 0 0 2em 2em;
-  background: darkorange;
+  background: var(--main-color-2);
   display: flex;
   position: fixed;
   top: 0;
@@ -89,20 +96,18 @@ a.title {
 .main_header {
   display: flex;
   justify-content: space-between;
-  height: 2.65em;
+  height: 100%;
   /* border: 1px solid #000; */
 }
 .main_logo {
-  /* background: red; */
-  /* align-self: center; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1em 2em; */
   font-size: 2em;
   /* border: 1px solid #000; */
 }
 .main_logo xmp {
+  font-size: 2em;
   font-family: Luckiest Guy;
 }
 .social_media {
@@ -123,12 +128,12 @@ a.title {
     display: flex;
   }
 }
-/* ========== HEADER SECTION ENDS ========== */
+/* ========== HEADER ENDS ========== */
 
 
 
 
-/* ========== NAVBAR SECTION STARTS ========== */
+/* ========== NAVBAR STARTS ========== */
 .navbar {
   position: fixed;
   top: 0;
@@ -138,9 +143,9 @@ a.title {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 .navbar_container {
-  /* border: 1px solid red; */
   height: 61%;
   width: 100%;
   display: flex;
@@ -149,7 +154,6 @@ a.title {
   flex-direction: column;
 }
 .navbar_item {
-  /* padding: 1em; */
   width: 4em;
   border-radius: 50%;
   overflow: hidden;
@@ -160,7 +164,7 @@ a.title {
   transition: transform 200ms ease-in;
 }
 .navbar_item_hidden {
-  transform: translateX(90px);
+  transform: translateX(8em);
 }
 .navbar_item_visible {
   transform: translateX(0px);
@@ -179,6 +183,9 @@ a.title {
 }
 .navbar_item:nth-of-type(5) {
   transition-delay: 200ms;
+}
+.navbar_item:nth-of-type(5) img {
+  width: 96px;
 }
 .navbar_item_text {
   position: relative;
@@ -213,7 +220,7 @@ a.title {
 }
 .nav_logo {
   white-space: nowrap;
-  background: #333;
+  background: var(--main-color-2);
   transform: translateZ(.001px);
 }
 .nav_tip_text, .nav_logo_image {
@@ -226,37 +233,64 @@ a.title {
     transform: translateX(-20px);
   }
 }
-/* ========== NAVBAR SECTION ENDS ========== */
+/* ========== NAVBAR ENDS ========== */
 
 
 
 
+/* ========== PROFILE STARTS ========== */
 .profile {
   display: flex;
-  /* width: 90%; */
+  width: 100%;
+  height: 110%;
+  position: relative;
+}
+.profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  border-radius: 2em;
-  overflow: hidden;
-  box-shadow: .1em .1em 1em .1em #06050388;
+  background: linear-gradient(to right, var(--main-color-1) 50%, transparent 90%);
+}
+.profile_image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(/media/photos/italo-melo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .profile_text_container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 100%;
+  display: flex;
+  align-items: center;
   font-family: Alpha echo;
-  /* border: 1px solid red; */
-}
-.profile_text_container h1 {
-  font-size: 3em;
-  width: 80%;
-  color: #a7a29c;
+  /* border: 2px solid red; */
 }
 .profile_text {
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  width: 50%;
 }
-.profile_image_container {
+.profile_text h1 {
+  font-size: 8em;
+  width: 80%;
+  color: #dfceb9;
+}
+.profile_text p {
+  font-size: 3.5em;
+}
+/* .profile_image_container {
+  flex: 1;
   position: relative;
   width: 0%;
   height: 100%;
@@ -270,30 +304,12 @@ a.title {
 .profile_visible .profile_image_container {
   opacity: 1;
   width: 100%;
-}
-.profile_image_container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to left, transparent 0%, var(--main-color) 100%);
-  z-index: 5;
-  /* border: 1px solid #000; */
-}
-.profile_image {
+} */
+/* .profile_image {
   width: 100%;
   height: 100%;
-  /* background-color: #0c1936; */
-  background-image: url(/media/photos/italo-melo.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-
-
+} */
+/* ========== PROFILE ENDS ========== */
 
 
 
